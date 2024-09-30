@@ -1,24 +1,20 @@
 #include <iostream>
+#include <cmath>
 
 int main() {
-    int a;
-    int b;
-    int res;
-    std::cout << "Enter number 1: ";
-    std::cin >> a;
-    std::cout << "Enter number 2: ";
-    std::cin >> b;
+    double z1;
+    double z2;
+    double inputInt;
 
-    res = a * a;
+    std::cout << "Enter you number: ";
+    std::cin >> inputInt;
 
-    std::cout << std::endl << "Square of " << a << " is " << res << std::endl;
+    z1 = (sin(inputInt * 4) / (1 + cos(inputInt * 4))) * (cos(2 * inputInt) / (1 + cos(2 * inputInt)));
 
-    std::cout << a << " + " << b << " = " << a + b << std::endl;
-    std::cout << a << " - " << b << " = " << a - b << std::endl;
-    std::cout << a << " * " << b << " = " << a * b << std::endl;
+    z2 = 1 / tan((3.0 / 2.0 * M_PI) - inputInt);
 
-    double devisionRes = static_cast<float>(a) / b;
-    std::cout << a << " / " << b << " = " << devisionRes << std::endl;
+    std::cout << std::endl << "z1 value is: " << z1 << std::endl;
+    std::cout << "z2 value is: " << z2 << std::endl;
 
     return 0;
  
