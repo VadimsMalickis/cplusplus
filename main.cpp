@@ -12,6 +12,7 @@ int main() {
    
     while (true) {
         std::cin >> measureUnit;
+        measureUnit = std::tolower(measureUnit);
         if (measureUnit == 'r' || measureUnit == 'd') {
             break;
         } else {
