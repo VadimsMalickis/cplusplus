@@ -16,7 +16,7 @@ int main() {
         if (measureUnit == 'r' || measureUnit == 'd') {
             break;
         } else {
-            std::cout << "Invalid input, type \"r\" or \"d\"" << std::endl;
+            std::cout << "Invalid input, only \"r\" and \"d\" options are available." << std::endl;
         }
     }
 
