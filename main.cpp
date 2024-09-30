@@ -3,17 +3,20 @@
 
 int main() {
 
-    int radiuss;
-    float circleArea;
+    int base;
+    int height;
+    double triangleArea;
 
     printf("Enter input data:\n\n");
-    printf("Circle radiuss (cm) -> \033[1m");
-    scanf("%i", &radiuss);
+    printf("Enter base of a triangle: \033[1m");
+    scanf("%i", &base);
+    printf("\033[0mEnter height of a triangle: \033[1m");
+    scanf("%i", &height);
     printf("\033[0m\n");
 
-    circleArea = M_PI * (radiuss * radiuss);
+    triangleArea = 0.5 * base * height;
 
-    printf("Area of the circle is %.4f sq.cm\n", circleArea);
+    printf("Area of the triangle is %.7lf sq.cm\n", triangleArea);
 
     return 0;
  
