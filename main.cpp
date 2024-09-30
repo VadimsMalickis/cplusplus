@@ -1,6 +1,7 @@
 #include <iostream>
 
 int main() {
+    
     int rectSideA;
     int rectSideB;
     std::cout << "Enter input data: \n\n";
