@@ -1,14 +1,15 @@
 #include <iostream>
 
 int main() {
-    int a; // declaration for variable а of type int
-    int res; // declaration for variable res of type int
-    printf("Enter number: "); // text "Enter number: " output
-    scanf("%i", &a); // waiting for user to enter integer number. Number then is
-    // stored in variable а
-    res = a * a; // calculate square of variable a value. Result is then stored in
-    // variable res
-    printf("Square of %i is %i\n", a, res); // output the result
+    int rectSideA;
+    int rectSideB;
+    std::cout << "Enter input data: \n\n";
+    std::cout << "Rectangle width (cm) -> \033[1m";
+    std::cin >> rectSideA;
+    std::cout << "\033[0mRectangle height (cm) -> \033[1m";
+    std::cin >> rectSideB;
+    std::cout << "\033[0m\n";
+    std::cout << "Area of the rectangle is " << rectSideA * rectSideB << " sq.cm" << std::endl;
 
     return 0;
  
