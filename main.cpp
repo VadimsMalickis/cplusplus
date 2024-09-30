@@ -1,16 +1,19 @@
 #include <iostream>
+#include <cmath>
 
 int main() {
-    
-    int rectSideA;
-    int rectSideB;
-    std::cout << "Enter input data: \n\n";
-    std::cout << "Rectangle width (cm) -> \033[1m";
-    std::cin >> rectSideA;
-    std::cout << "\033[0mRectangle height (cm) -> \033[1m";
-    std::cin >> rectSideB;
-    std::cout << "\033[0m\n";
-    std::cout << "Area of the rectangle is " << rectSideA * rectSideB << " sq.cm" << std::endl;
+
+    int radiuss;
+    float circleArea;
+
+    printf("Enter input data:\n\n");
+    printf("Circle radiuss (cm) -> \033[1m");
+    scanf("%i", &radiuss);
+    printf("\033[0m\n");
+
+    circleArea = M_PI * (radiuss * radiuss);
+
+    printf("Area of the circle is %.4f sq.cm\n", circleArea);
 
     return 0;
  
