@@ -2,21 +2,18 @@
 #include <cmath>
 
 int main() {
-
-    int base;
-    int height;
-    double triangleArea;
-
-    printf("Enter input data:\n\n");
-    printf("Enter base of a triangle: \033[1m");
-    scanf("%i", &base);
-    printf("\033[0mEnter height of a triangle: \033[1m");
-    scanf("%i", &height);
-    printf("\033[0m\n");
-
-    triangleArea = 0.5 * base * height;
-
-    printf("Area of the triangle is %.7lf sq.cm\n", triangleArea);
+    int a;
+    int b;
+    printf("Enter number 1: ");
+    scanf("%i", &a);
+    printf("Enter number 2: ");
+    scanf("%i", &b);
+    printf("\nSquare of %i is %i\n", a, a * a);
+    
+    printf("%i + %i = %i\n", a, b, a + b);
+    printf("%i - %i = %i\n", a, b, a - b);
+    printf("%i * %i = %i\n", a, b, a * b);
+    printf("%i / %i = %.2f\n", a, b, static_cast<float>(a) / static_cast<float>(b));
 
     return 0;
  
