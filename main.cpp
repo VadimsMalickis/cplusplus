@@ -4,19 +4,21 @@ int main() {
     int a;
     int b;
     int res;
-    printf("Enter number 1: ");
-    scanf("%i", &a);
-    printf("Enter number 2: ");
-    scanf("%i", &b);
+    std::cout << "Enter number 1: ";
+    std::cin >> a;
+    std::cout << "Enter number 2: ";
+    std::cin >> b;
 
     res = a * a;
 
-    printf("\nSquare of %i is %i\n", a, res);
+    std::cout << std::endl << "Square of " << a << " is " << res << std::endl;
 
-    printf("%i + %i = %i\n", a, b, a + b);
-    printf("%i - %i = %i\n", a, b, a - b);
-    printf("%i * %i = %i\n", a, b, a * b);
-    printf("%i / %i = %.2f\n", a, b, static_cast<float>(a) / b);
+    std::cout << a << " + " << b << " = " << a + b << std::endl;
+    std::cout << a << " - " << b << " = " << a - b << std::endl;
+    std::cout << a << " * " << b << " = " << a * b << std::endl;
+
+    double devisionRes = static_cast<float>(a) / b;
+    std::cout << a << " / " << b << " = " << devisionRes << std::endl;
 
     return 0;
  
